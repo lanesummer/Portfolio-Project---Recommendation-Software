@@ -78,8 +78,3 @@ genres = [
     }
   ]
 
-
-
-
-for genre in genres:
-    print(genre['name'])
