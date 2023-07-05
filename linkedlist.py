@@ -17,7 +17,7 @@ class LinkedList:
         string_list = ''
         while self.head_node:
             if self.head_node.get_value() != None:
-                string_list += str(self.head_node.get_value()) + '\n'
+                string_list += str(self.head_node.get_value()) + '\n' + '-------------------'
             self.head_node = self.head_node.get_next_node()
         return string_list
 
@@ -33,7 +33,7 @@ class LinkedList:
                     current_node = None
                 else:
                     current_node = next_node
-                    
+
     def get_val(self, tar_index):
         val = ''
         while self.head_node:
