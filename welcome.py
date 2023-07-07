@@ -30,4 +30,5 @@ welcome = '''
                     **                                  **
                     --------------------------------------
 
+Let me help you find a movie to watch! Follow the prompts below...
 '''

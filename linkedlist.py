@@ -15,29 +15,21 @@ class LinkedList:
 
     def stringify_list(self):
         string_list = ''
-        while self.head_node:
-            if self.head_node.get_value() != None:
-                string_list += str(self.head_node.get_value()) + '\n' + '-------------------'
-            self.head_node = self.head_node.get_next_node()
+        current_node = self.get_head_node()
+        while current_node.get_next_node() is not None:
+            string_list += str(current_node.value) + "\n" + '-------------------\n' + 'end string this node\n' + '-------------------\n'
+            current_node = current_node.get_next_node()
         return string_list
 
     def remove_node(self, value_to_remove):
-        current_node = self.get_head_node()
+        current_node = self.head_node
         if current_node.get_value() == value_to_remove:
             self.head_node = current_node.get_next_node()
         else:
             while current_node:
                 next_node = current_node.get_next_node()
                 if next_node.get_value() == value_to_remove:
-                    current_node.set_next_node(next_node.get_next_node())
+                    current_node.next_node = next_node.get_next_node()
                     current_node = None
                 else:
                     current_node = next_node
-
-    def get_val(self, tar_index):
-        val = ''
-        while self.head_node:
-            if self.head_node.get_value() != None:
-                val += str(self.head_node.get_value()[tar_index]) + '\n'
-            self.head_node = self.head_node.get_next_node()
-        return val
