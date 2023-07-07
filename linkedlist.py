@@ -17,7 +17,7 @@ class LinkedList:
         string_list = ''
         current_node = self.get_head_node()
         while current_node.get_next_node() is not None:
-            string_list += str(current_node.value) + "\n" + '-------------------\n' + 'end string this node\n' + '-------------------\n'
+            string_list += str(current_node.value) + "\n" + '-------------------\n'
             current_node = current_node.get_next_node()
         return string_list
 
