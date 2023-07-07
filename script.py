@@ -57,11 +57,14 @@ while len(selected_genre) == 0:
         for genre in matching:
             print(genre)
 
+    if len(matching) == 0:
+        print('\nSorry, there are no genres that match that search')
+
 
 
     # Check if only one genre was found, ask user if they would like to select this type
     if len(matching) == 1:
-        select_movie_genre = str(input('\nThere is only one genre that matches your search: {0} \nDo you want to look at {0} movies? Enter y for yes and n for no.\n'.format(matching[0]))).lower()
+        select_movie_genre = str(input('\nThere is only one genre that matches your search: {0} \n\nDo you want to look at {0} movies? Enter y for yes and n for no.\n'.format(matching[0]))).lower()
 
         # After finding genre, retrieve movie data for selected genre
         if select_movie_genre == 'y':
@@ -71,14 +74,9 @@ while len(selected_genre) == 0:
             print('Selected genre: {0}'.format(matching[0]))
             print('------------------------------------------------------------------------------\n')
             my_movie_head = my_movie_list.get_head_node()
-            while my_movie_head.get_next_node() is not None:
+            while my_movie_head.get_value() is not None:
                 sublist = my_movie_head.get_value().get_head_node()
-                # if there aren't movies in the selected genre
-                if not sublist.get_value():
-                    print('There are no movies for that genre\n')
-                    break
-                # if there are movies in the genre
-                elif sublist.get_value()[0] == selected_genre:
+                if sublist.get_value()[0] == selected_genre:
                     while sublist.get_next_node() is not None:
                         # create variables to make print statements more readable
                         title = sublist.get_value()[2]
@@ -100,3 +98,9 @@ while len(selected_genre) == 0:
 
 
         # Ask user if they would like to search for other genres of movies
+        repeat = str(input('\nWould you like to look at movies in another genre? Enter y for yes and n for no.\n')).lower()
+        if repeat == 'y':
+            selected_genre = ''
+        if repeat == 'n':
+            selected_genre = 'end'
+            print('\n\nThank you for using Summer\'s Movie Picker!\n')
