@@ -13,16 +13,12 @@ genres = [
     "Drama",
     "Family",
     "Fantasy",
-    "History",
     "Horror",
-    "Music",
     "Mystery",
     "Romance",
     "Science Fiction",
-    "TV Movie",
     "Thriller",
-    "War",
-    "Western"
+    "War"
   ]
 
 movie_data_headings = ['genre', 'title', 'overview', 'release_date', 'rating', 'tomatometer', 'audience_score']
