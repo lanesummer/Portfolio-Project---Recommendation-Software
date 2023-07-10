@@ -25,7 +25,7 @@ def insert_movie_data():
             while index < len(movie[0]):
                 if movie[0][index] == genre:
                     movie_this_genre = [genre] + movie
-                    genre_sublist.insert_beginning(movie_this_genre)
+                    genre_sublist.insert_beginning(movie_this_genre, 2)
                 index += 1
         movie_data_list.insert_beginning(genre_sublist)
     return movie_data_list
@@ -92,7 +92,7 @@ while len(selected_genre) == 0:
                         wrapper = TextWrapper(width = 70)
                         overview_wrapped = wrapper.fill(overview_text)
                         # print result for movie(s) of the genre selected
-                        print(dedent('Title: {0}\n\nGenre(s): {1}\nRated: {2}\nTomatometer Score: {3}\nAudience Score: {4}\n\nOverview: {5}\n------------------------------------------------------------------------------\n'.format(title, pgenre, rated, tomato, audience, overview_wrapped)))
+                        print(dedent('TITLE: {0}\n\nRated: {1}\nGenre(s): {2}\nTomatometer Score: {3}\nAudience Score: {4}\n\nOverview: {5}\n------------------------------------------------------------------------------\n'.format(title, rated, pgenre, tomato, audience, overview_wrapped)))
                         sublist = sublist.get_next_node()
                 my_movie_head = my_movie_head.get_next_node()
 
@@ -103,4 +103,4 @@ while len(selected_genre) == 0:
             selected_genre = ''
         if repeat == 'n':
             selected_genre = 'end'
-            print('\n\nThank you for using Summer\'s Movie Picker!\n')
+            print('\n\nThank you for using Summer\'s Movie Picker!\n\n')
