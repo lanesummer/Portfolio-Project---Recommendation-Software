@@ -10,10 +10,10 @@ class LinkedList:
 
     def insert_beginning(self, new_value, sort_index=None):
         new_node = Node(new_value)
-        if sort_index == None:
-            new_node.set_next_node(self.head_node)
+        if self.head_node.get_value() == None:
             self.head_node = new_node
-        elif self.head_node.get_value() == None:
+        elif sort_index == None:
+            new_node.set_next_node(self.head_node)
             self.head_node = new_node
         else:
             current_node = self.head_node
