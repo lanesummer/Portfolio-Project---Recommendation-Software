@@ -110,10 +110,10 @@ while len(selected_type) == 0:
             print('Selected genre: {0}'.format(matching[0]))
             print('------------------------------------------------------------------------------\n')
             my_movie_head = my_movie_list.get_head_node()
-            while my_movie_head is not None: ####-------------HERE--- this works except it leaves 1 piece of data off. Need to fix. Run War to see nothing comes up
+            while my_movie_head:
                 sublist = my_movie_head.get_value().get_head_node()
                 if sublist.get_value()[0] == selected_type:
-                    while sublist.get_next_node() is not None:
+                    while sublist is not None:
                         # create variables to make print statements more readable
                         title = sublist.get_value()[2]
                         pgenre = ', '.join(sublist.get_value()[1])

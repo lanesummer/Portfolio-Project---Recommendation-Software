@@ -27,7 +27,7 @@ class LinkedList:
                         return
                     else:
                         sort_next_node = next_node.get_value()[sort_index]
-                        if sort_new_node < sort_next_node:
+                        if sort_new_node < sort_next_node: #this is second sort
                             new_node.set_next_node(next_node)
                             current_node.set_next_node(new_node)
                         else:
