@@ -13,15 +13,19 @@ genres = [
     "Drama",
     "Family",
     "Fantasy",
+    "History",
     "Horror",
+    "Music",
     "Mystery",
     "Romance",
     "Science Fiction",
+    "TV Movie",
     "Thriller",
-    "War"
+    "War",
+    "Western"
   ]
 
-movie_ratings = ['PG-13', 'PG ', 'R', 'Not Rated']
+movie_ratings = ['G', 'PG-13', 'PG ', 'R', 'Not Rated']
 
 movie_data_headings = ['genre', 'title', 'overview', 'release_date', 'rating', 'tomatometer', 'audience_score']
 
