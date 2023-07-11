@@ -3,7 +3,7 @@ from textwrap import TextWrapper, dedent
 from movie_data import *
 from linkedlist import *
 from welcome import *
-
+import time
 
 # FUNCTIONS--------------------------------------------------------------------
 # create function to determine if user wants to search by genre, rating, etc
@@ -164,6 +164,7 @@ while len(selected_type) == 0:
                         overview_wrapped = wrapper.fill(overview_text)
                         # print result for movie(s) of the genre selected
                         print(dedent('TITLE: {0}\n\nRated: {1}\nGenre(s): {2}\nTomatometer Score: {3}\nAudience Score: {4}\n\nOverview: {5}\n------------------------------------------------------------------------------\n'.format(title, rated, pgenre, tomato, audience, overview_wrapped)))
+                        time.sleep(0.05)
                         sublist = sublist.get_next_node()
                 my_movie_head = my_movie_head.get_next_node()
 
