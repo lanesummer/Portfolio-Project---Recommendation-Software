@@ -21,6 +21,8 @@ genres = [
     "War"
   ]
 
+movie_ratings = ['PG-13', 'PG ', 'R', 'Not Rated']
+
 movie_data_headings = ['genre', 'title', 'overview', 'release_date', 'rating', 'tomatometer', 'audience_score']
 
 movies =[
@@ -38,7 +40,7 @@ movies =[
     "Spider-Man: Across the Spider-Verse",
     "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
     "2023-06-02",
-    'PG',
+    'PG ',
     96,
     94
   ],
@@ -65,7 +67,7 @@ movies =[
     "Elemental",
     "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
     "2023-06-16",
-    'PG',
+    'PG ',
     76,
     92
   ],
@@ -92,7 +94,7 @@ movies =[
     "The Little Mermaid",
     "The youngest of King Triton’s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life – and her father’s crown – in jeopardy.",
     "2023-05-26",
-    'PG',
+    'PG ',
     67,
     94
   ],
@@ -128,7 +130,7 @@ movies =[
     "Ruby Gillman, Teenage Kraken",
     "A shy teenager discovers that she's part of a legendary royal lineage of mythical sea krakens and that her destiny, in the depths of the oceans, is bigger than she ever dreamed.",
     "2023-06-30",
-    'PG',
+    'PG ',
     66,
     83
   ],
@@ -155,7 +157,7 @@ movies =[
     "The Secret Kingdom",
     "Verity and Peter’s trip to the old family mansion takes a turn when the floor of their room suddenly gives way and they fall into an underground chamber where they are met by a civilization of creatures. The leader tells them that Peter's arrival was foretold as he’s the one who can use Great Clock of the Citadel to restart time and destroy the Shroud, a malevolent creature who feeds on fear itself...",
     "2023-06-09",
-    'PG',
+    'PG ',
     67,
     58
   ],
@@ -218,7 +220,7 @@ movies =[
     "Nimona",
     "A knight framed for a tragic crime teams with a scrappy, shape-shifting teen to prove his innocence. But what if she's the monster he's sworn to destroy?",
     "2023-06-23",
-    'PG',
+    'PG ',
     92,
     94
   ],
